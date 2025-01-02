@@ -1,0 +1,38 @@
+.skills{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    font-weight: 900;
+    overflow: hidden;
+}
+.tbodyClass {
+    transform: translate(0%, 0%);
+    animation: scrollSkills 15s linear infinite alternate;
+    text-align: center;
+}
+
+.skills h3{
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.skillIMG{
+    width: 5rem;
+    border-radius: 10px;
+    margin: 0 0.5rem;
+    transition: scale ease 1s;
+}
+.skillIMG:hover{
+    scale: 1.2;
+}
+@media (max-width: 850px) {
+    @keyframes scrollSkills {
+        0% {
+            transform: translateX(20%);
+          }
+          100% {
+            transform: translateX(-70%);
+          }
+    }
+}
