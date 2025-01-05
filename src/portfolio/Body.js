@@ -62,6 +62,8 @@ function Body(){
                                  <a href=" https://kwai-video.com/u/@lucas_luwreal/JCPF9elI" target="_blank" rel="noopener noreferrer" aria-label="Acesse o perfil do Kwai de Lucas Luwreal"><img src='/img/links/kwaiLogo.jpg' alt=''/></a>
                                  <a href="https://www.tiktok.com/@laremtrasformacao?_t=ZM-8sgOhsd5Yg9&_r=1" target="_blank" rel="noopener noreferrer" aria-label="Acesse o perfil do TikTok de Lucas Luwreal"><img src='/img/links/tiktokLogo.jpg' alt=''/></a>
                                  <a href="https://youtube.com/@laremtrasformacao?si=t4FNf2b_6B0A__Us" target="_blank" rel="noopener noreferrer" aria-label="Acesse o perfil do Youtube de Lucas Luwreal"><img src='/img/links/youtubeLogo.jpg' alt=''/></a>
+                                 <a href="https://www.linkedin.com/in/luwreal/" target="_blank" rel="noopener noreferrer" aria-label="Acesse o perfil do Linkedin de Lucas Luwreal"><img src='/img/links/linkedinLogo.jpg' alt=''/></a>
+                                 <a href="https://github.com/LuwReal" target="_blank" rel="noopener noreferrer" aria-label="Acesse o perfil do GitHub de Lucas Luwreal"><img src='/img/links/githubLogo.jpg' alt=''/></a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +103,7 @@ function Body(){
             <ul>
                 <li className={styleSubProjeto.subProjetos_1}>
                     <h5>20k de Visualização</h5>
-                    <a className={styleSubProjeto.subProjetos_1_LinkUm} href="google.com">GitHub</a>
+                    <a className={styleSubProjeto.subProjetos_1_LinkUm} href="Não Ativo" target="_blank" rel="noopener noreferrer"><del>GitHub</del></a>
                     <div className={styleSubProjeto.subProjetos_1_Tecnologias}>
                         <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/skills/skill-1.jpg" alt="Logo Html" title="HTML Logo"/>
                         <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/skills/skill-2.jpg" alt="Logo CSS" title="CSS Logo"/>
@@ -111,7 +113,7 @@ function Body(){
                     <h3>Mundo Felino 2</h3>
                     <img className={styleSubProjeto.subProjetos_1_ImgSite} src="./img/capaMundo-Felino-2.jpg" alt=""/>
                     <div className={styleSubProjeto.subProjetos_1_WebSite}>
-                        <a className={styleSubProjeto.subProjetos_1_LinkDois} href="google.com" alt="">Web Site</a>
+                        <a className={styleSubProjeto.subProjetos_1_LinkDois} href="https://mundo-felino-2.com.br" target="_blank" rel="noopener noreferrer">Web Site</a>
                     </div>
                     <p className={styleSubProjeto.subProjetos_1_FicharioLink} onClick={toggleFichario}>Fichario</p>
                     <div className={styleSubProjeto.subProjetos_1_Fichario} style={styleFichario}>
