@@ -24,10 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #333;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
+
 html{
   overflow-x: hidden;
   margin: 0;
@@ -39,4 +39,10 @@ ul{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media (max-width: 1200px) {  
+  body{
+    overflow-x: hidden;
+  }
+  
 }
