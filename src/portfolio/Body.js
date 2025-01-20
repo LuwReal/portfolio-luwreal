@@ -3,6 +3,7 @@ import style from './Body.module.css';
 import styleQuemSouEu from './BodyQuemSouEu.module.css';
 import styleSkills from './BodySkills.module.css';
 import styleSubProjeto from './BodySubProjeto.module.css';
+import styleSubProjeto2 from './BodySubProjeto2.module.css';
 
 
 function Body(){
@@ -19,6 +20,20 @@ function Body(){
         width: ativa[0],
         opacity: ativa[1],
         visibility: ativa[2],
+    }
+
+    let [ativa2, setAtiva2] = useState(['0rem', '0', 'hidden'])
+    let toggleFichario2 = () =>{
+        if(ativa2[0] === '0rem'){
+            setAtiva2(['20rem', '1', 'visible'])
+        }else{
+            setAtiva2(['0rem', '0', 'hidden'])
+        }
+    }
+    let styleFichario2 = {
+        width: ativa2[0],
+        opacity: ativa2[1],
+        visibility: ativa2[2],
     }
 
     
@@ -102,8 +117,8 @@ function Body(){
             <div className={styleSubProjeto.subProjetos}>
             <ul>
                 <li className={styleSubProjeto.subProjetos_1}>
-                    <h5>20k de Visualização</h5>
-                    <a className={styleSubProjeto.subProjetos_1_LinkUm} href="Não Ativo" target="_blank" rel="noopener noreferrer"><del>GitHub</del></a>
+                    <h5>Blogs</h5>
+                    <p className={styleSubProjeto.subProjetos_1_LinkUm}><del>GitHub</del></p>
                     <div className={styleSubProjeto.subProjetos_1_Tecnologias}>
                         <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/skills/skill-1.jpg" alt="Logo Html" title="HTML Logo"/>
                         <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/skills/skill-2.jpg" alt="Logo CSS" title="CSS Logo"/>
@@ -141,15 +156,60 @@ function Body(){
                                 </tr>
                                 <tr>
                                     <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd11}>Resultados:</td>
-                                    <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd12}>20k Visualização</td>
+                                    <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd12}>16 Páginas</td>
                                 </tr>
                             </tbody>
                         </table>
                         <button  onClick={toggleFichario}>Volta</button>
                     </div>
                 </li>
-                <li style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <p><b>Em Breve</b></p>
+                <li className={styleSubProjeto2.subProjetos_2}>
+                    <h5>API - Validação</h5>
+                    <a className={styleSubProjeto2.subProjetos_2_LinkUm} href="https://github.com/LuwReal/InteracaoUsuarioEServido" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <div className={styleSubProjeto2.subProjetos_2_Tecnologias}>
+                        <img className={styleSubProjeto2.skillIMGSubProjeto_2} src="./img/skills/skill-1.jpg" alt="Logo Html" title="HTML Logo"/>
+                        <img className={styleSubProjeto2.skillIMGSubProjeto_2} src="./img/skills/skill-2.jpg" alt="Logo CSS" title="CSS Logo"/>
+                        <img className={styleSubProjeto2.skillIMGSubProjeto_2} src="./img/skills/skill-3.jpg" alt="Logo JavaScript" title="JavaScript Logo"/>
+                        <img className={styleSubProjeto2.skillIMGSubProjeto_2} src="./img/skills/skill-4.jpg" alt="Logo React" title="React Logo"/>
+                        <img className={styleSubProjeto2.skillIMGSubProjeto_2} src="./img/skills/skill-9.jpg" alt="Logo Python" title="Python Logo"/>
+                    </div>
+                    <h3>Qual eo Anime?</h3>
+                    <img className={styleSubProjeto2.subProjetos_2_ImgSite} src="./img/capaProjeto_2.jpg" alt=""/>
+                    <div className={styleSubProjeto2.subProjetos_2_WebSite}>
+                        <a className={styleSubProjeto2.subProjetos_2_LinkDois} href="https://interacao-usuario-e-servido.vercel.app/" target="_blank" rel="noopener noreferrer">Web Site</a>
+                    </div>
+                    <p className={styleSubProjeto2.subProjetos_2_FicharioLink} onClick={toggleFichario2}>Fichario</p>
+                    <div className={styleSubProjeto2.subProjetos_2_Fichario} style={styleFichario2}>
+                        <table className={styleSubProjeto2.subProjetos_2_FicharioTabela}>
+                            <tbody>
+                                <tr>
+                                    <td className={styleSubProjeto2.subProjetos_2_FicharioTabelaTd1}>Nome do projeto:</td>
+                                    <td className={styleSubProjeto2.subProjetos_2_FicharioTabelaTd2}>Sistema de validação com backend</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo de <br/> projeto:</td>
+                                    <td> API - Validação - Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>Objetivo:</td>
+                                    <td>Interagir com Backend</td>
+                                </tr>
+                                <tr>
+                                    <td>Papel no Projeto:</td>
+                                    <td>responsável por todo o desenvolvimento</td>
+                                </tr>
+                                <tr>
+                                    <td>Tecnologias Utilizadas:</td>
+                                    <td>HTML, CSS, JavaScript, React e Python</td>
+                                </tr>
+                                <tr>
+                                    <td className={styleSubProjeto2.subProjetos_2_FicharioTabelaTd11}>Resultados:</td>
+                                    <td className={styleSubProjeto2.subProjetos_2_FicharioTabelaTd12}>Página Dinâmica</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button  onClick={toggleFichario2}>Volta</button>
+                    </div>
                 </li>
                 <li style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <p><b>Em Breve</b></p>

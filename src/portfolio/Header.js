@@ -12,6 +12,10 @@ function Header(){
         })
     }
 
+
+
+
+
     return(
         <div className={style.container}>
             <nav className={style.menuNav}>
@@ -29,11 +33,11 @@ function Header(){
                 </div>
                 <div className={style.informaçõesProjetos}>
                     <span>Mundo Felino 2</span><br/>
-                    Foi Criado Para Trafeco Organico, Primeiro Projeto Oficial Produzido. Lucas Barbosa de Souza
+                    Blogs com 16 páginas, básico, responsivo, parte de um projeto beta Mundo Felino 2.
                 </div>
                 <ul className={style.informaçõesProjetosList}>
-                    <li>Valor Bruto de Trafeco 10mil pessoas</li>
-                    <li>200 De Valor Total de Conteudo Bruto</li>
+                    <li>Lançamento 04/01/25</li>
+                    <li>Conteúdo Escrito e Digitado</li>
                 </ul>
                 <img className={style.projetosImg} src='/img/mundo-felino-2.png' alt='Logo Do Projeto Mundo Felino 2'/>
             </div>

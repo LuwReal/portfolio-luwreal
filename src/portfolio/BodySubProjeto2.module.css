@@ -1,41 +1,16 @@
-.subProjetos{
-    color: #ddd;
-    margin: auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.subProjetos ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.subProjetos li{
-    width: 20rem;
-    height: 25rem;
-    background-color: #555;
-}
-.subProjetos ul{
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-.subProjetos_1{
+.subProjetos_2{
     color: aliceblue;
 }
-.subProjetos_1 a{
+.subProjetos_2 a{
     text-decoration: none;
 }
-.subProjetos_1 h5{
-    font-size: 2rem;
+.subProjetos_2 h5{
+    height: 2rem;
     padding-top: 0.3rem;
     background-color: #666;
 }
-.subProjetos_1_LinkUm{
+.subProjetos_2_LinkUm{
     color: aliceblue;
     font-size: 1.3rem;
     background-color: #333;
@@ -47,19 +22,19 @@
     padding: 0.5rem;
     border-bottom-right-radius: 1.5rem;
 }
-.subProjetos_1_LinkUm:hover{
+.subProjetos_2_LinkUm:hover{
     box-shadow: inset 0 0 5px #000;
 }
-.subProjetos_1_Tecnologias{
+.subProjetos_2_Tecnologias{
     display: flex;
-    transform: translate(55%, -117%);
+    transform: translate(43%, -117%);
     gap: 0.3rem;
 }
-.subProjetos_1_Tecnologias img:hover{
+.subProjetos_2_Tecnologias img:hover{
     scale: 1.1;
     transform: translate(0%, 0%);
 }
-.skillIMGSubProjeto{
+.skillIMGSubProjeto_2{
     width: 2rem;
     height: 2rem;
     background-color: yellow;
@@ -67,18 +42,19 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-.subProjetos_1 h3{
+.subProjetos_2 h3{
     font-size: 2.5rem;
     text-align: center;
 }
-.subProjetos_1 h5{
+.subProjetos_2 h5{
     text-align: center;
+    font-size: 1.7rem;
 }
-.subProjetos_1_ImgSite{
+.subProjetos_2_ImgSite{
     width: 100%;
     height: 15.9rem;
 }
-.subProjetos_1_WebSite{
+.subProjetos_2_WebSite{
     font-size: 1.3rem;
     text-decoration: none;
     width: 5rem;
@@ -91,17 +67,17 @@
     line-height: 1;
     text-align: center;
 }
-.subProjetos_1_WebSite:hover{
+.subProjetos_2_WebSite:hover{
     box-shadow: inset 1px 1px 0 #000;
 }
-.subProjetos_1_LinkDois{
+.subProjetos_2_LinkDois{
     text-decoration: none;
     color: aliceblue;
     margin-top: 1.5rem;
     margin-left: 0.7rem;
 
 }
-.subProjetos_1_FicharioLink{
+.subProjetos_2_FicharioLink{
     font-size: 1.5rem;
     transform: translate(0%, -300%);
     background-color: #333;
@@ -111,7 +87,7 @@
     border-top-right-radius: 8px;
     cursor: pointer;
 }
-.subProjetos_1_Fichario{
+.subProjetos_2_Fichario{
     position: absolute;
     height: 25.1rem;
     background-color: #777;
@@ -121,7 +97,7 @@
     flex-direction: column;
     transition: width 2s ease, opacity 3s ease, visibility 3s ease;
 }
-.subProjetos_1_FicharioTabela{
+.subProjetos_2_FicharioTabela{
     width: 18rem;
     margin: 1rem;
     height: 18rem;
@@ -130,31 +106,31 @@
     color: #000;
     
 }
-.subProjetos_1_FicharioTabela th, .subProjetos_1_FicharioTabela td{
+.subProjetos_2_FicharioTabela th, .subProjetos_2_FicharioTabela td{
     border: 1px solid #dddddd;
     border: none; 
     
 }
-.subProjetos_1_FicharioTabela tr:nth-child(odd) {
+.subProjetos_2_FicharioTabela tr:nth-child(odd) {
     background-color: #f3f3f3; /* Linhas alternadas */
 }
   
-.subProjetos_1_FicharioTabela tr:nth-child(even) {
+.subProjetos_2_FicharioTabela tr:nth-child(even) {
     background-color: #ffffff;
 }
-.subProjetos_1_FicharioTabelaTd1{
+.subProjetos_2_FicharioTabelaTd1{
     border-top-left-radius: 1rem;
 }
-.subProjetos_1_FicharioTabelaTd2{
+.subProjetos_2_FicharioTabelaTd2{
     border-top-right-radius: 1rem;
 }
-.subProjetos_1_FicharioTabelaTd11{
+.subProjetos_2_FicharioTabelaTd11{
     border-bottom-left-radius: 1rem;
 }
-.subProjetos_1_FicharioTabelaTd12{
+.subProjetos_2_FicharioTabelaTd12{
     border-bottom-right-radius: 1rem;
 }
-.subProjetos_1_Fichario button{
+.subProjetos_2_Fichario button{
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -164,6 +140,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.subProjetos_1_Fichario button:hover{
+.subProjetos_2_Fichario button:hover{
     background-color: #0056b3; 
 }
