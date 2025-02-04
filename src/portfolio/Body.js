@@ -7,7 +7,7 @@ import styleSubProjeto2 from './BodySubProjeto2.module.css';
 
 
 function Body(){
-
+// Função Projeto 1
     let [ativa, setAtiva] = useState(['0rem', '0', 'hidden'])
     let toggleFichario = () =>{
         if(ativa[0] === '0rem'){
@@ -21,6 +21,7 @@ function Body(){
         opacity: ativa[1],
         visibility: ativa[2],
     }
+// Função Projeto 2
 
     let [ativa2, setAtiva2] = useState(['0rem', '0', 'hidden'])
     let toggleFichario2 = () =>{
@@ -35,7 +36,20 @@ function Body(){
         opacity: ativa2[1],
         visibility: ativa2[2],
     }
-
+// Função Projeto 3
+let [ativa3, setAtiva3] = useState(['0rem', '0', 'hidden'])
+    let toggleFichario3 = () =>{
+        if(ativa3[0] === '0rem'){
+            setAtiva3(['20rem', '1', 'visible'])
+        }else{
+            setAtiva3(['0rem', '0', 'hidden'])
+        }
+    }
+    let styleFichario3 = {
+        width: ativa3[0],
+        opacity: ativa3[1],
+        visibility: ativa3[2],
+    }
     
     return(
         <div className={style.container}>
@@ -116,9 +130,10 @@ function Body(){
             <h3 style={{textAlign: 'center', fontSize: '2rem', color: '#ddd', marginBottom: '1rem'}}>Projetos</h3>
             <div className={styleSubProjeto.subProjetos}>
             <ul>
+                {/* {Projeto 1} */}
                 <li className={styleSubProjeto.subProjetos_1}>
                     <h5>Blogs</h5>
-                    <p className={styleSubProjeto.subProjetos_1_LinkUm}><del>GitHub</del></p>
+                    <a className={styleSubProjeto2.subProjetos_2_LinkUm} href="https://github.com/LuwReal/mundo-felino-2" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <div className={styleSubProjeto.subProjetos_1_Tecnologias}>
                         <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/skills/skill-1.jpg" alt="Logo Html" title="HTML Logo"/>
                         <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/skills/skill-2.jpg" alt="Logo CSS" title="CSS Logo"/>
@@ -128,7 +143,7 @@ function Body(){
                     <h3>Mundo Felino 2</h3>
                     <img className={styleSubProjeto.subProjetos_1_ImgSite} src="./img/capaMundo-Felino-2.jpg" alt=""/>
                     <div className={styleSubProjeto.subProjetos_1_WebSite}>
-                        <a className={styleSubProjeto.subProjetos_1_LinkDois} href="https://mundo-felino-2.com.br" target="_blank" rel="noopener noreferrer">Web Site</a>
+                        <a className={styleSubProjeto.subProjetos_1_LinkDois} href="https://mundofelino2.vercel.app/" target="_blank" rel="noopener noreferrer">Web Site</a>
                     </div>
                     <p className={styleSubProjeto.subProjetos_1_FicharioLink} onClick={toggleFichario}>Fichario</p>
                     <div className={styleSubProjeto.subProjetos_1_Fichario} style={styleFichario}>
@@ -163,6 +178,7 @@ function Body(){
                         <button  onClick={toggleFichario}>Volta</button>
                     </div>
                 </li>
+                {/* {Projeto 2} */}
                 <li className={styleSubProjeto2.subProjetos_2}>
                     <h5>API - Validação</h5>
                     <a className={styleSubProjeto2.subProjetos_2_LinkUm} href="https://github.com/LuwReal/InteracaoUsuarioEServido" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -209,6 +225,54 @@ function Body(){
                             </tbody>
                         </table>
                         <button  onClick={toggleFichario2}>Volta</button>
+                    </div>
+                </li>
+                {/* {Projeto 3} */}
+                <li className={styleSubProjeto.subProjetos_1}>
+                    <h5>Rede Social</h5>
+                    <a className={styleSubProjeto2.subProjetos_2_LinkUm} href="https://mundofelino2.vercel.app/Contato" target="_blank" rel="noopener noreferrer">Redes</a>
+                    <div className={styleSubProjeto.subProjetos_1_Tecnologias}>
+                        <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/links/youtubeLogo.jpg" alt="Logo Youtube" title="Youtube Logo"/>
+                        <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/links/kwaiLogo.jpg" alt="Logo Kwai" title="Kwai Logo"/>
+                        <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/links/tiktokLogo.jpg" alt="Logo TikTok" title="TikTok Logo"/>
+                        <img className={styleSubProjeto.skillIMGSubProjeto} src="./img/links/mundo-felino-2.png" alt="Logo Blog" title="Blog Logo"/>
+                    </div>
+                    <h3>Mundo Felino 2</h3>
+                    <img className={styleSubProjeto.subProjetos_1_ImgSite} src="./img/capaMundo-Felino-2-redes.jpg" alt=""/>
+                    <div className={styleSubProjeto.subProjetos_1_WebSite}>
+                        <a className={styleSubProjeto.subProjetos_1_LinkDois} href="https://www.youtube.com/@MundoFelino-2/shorts" target="_blank" rel="noopener noreferrer">Youtube</a>
+                    </div>
+                    <p className={styleSubProjeto.subProjetos_1_FicharioLink} onClick={toggleFichario3}>Fichario</p>
+                    <div className={styleSubProjeto.subProjetos_1_Fichario} style={styleFichario3}>
+                        <table className={styleSubProjeto.subProjetos_1_FicharioTabela}>
+                            <tbody>
+                                <tr>
+                                    <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd1}>Nome do projeto:</td>
+                                    <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd2}>Mundo Felino 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo de <br/> projeto:</td>
+                                    <td> Captura de Trafico</td>
+                                </tr>
+                                <tr>
+                                    <td>Objetivo:</td>
+                                    <td>Visualizações</td>
+                                </tr>
+                                <tr>
+                                    <td>Papel no Projeto:</td>
+                                    <td>responsável por todo o desenvolvimento</td>
+                                </tr>
+                                <tr>
+                                    <td>Tecnologias Utilizadas:</td>
+                                    <td>CapCut, Canva, Snaptube e ChatGPT</td>
+                                </tr>
+                                <tr>
+                                    <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd11}>Resultados:</td>
+                                    <td className={styleSubProjeto.subProjetos_1_FicharioTabelaTd12}>100.000 Visualizações</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button  onClick={toggleFichario3}>Volta</button>
                     </div>
                 </li>
                 <li style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
